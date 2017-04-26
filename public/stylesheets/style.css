@@ -6,3 +6,71 @@ body {
 a {
   color: #00B7FF;
 }
+/*pop-up require*/
+#greyBody{
+  background-color: grey;
+  z-index: 1;
+}
+
+#wrapper{
+  width: 1170px;
+  height: auto;
+  border: 1px black solid;
+  margin: auto;
+  box-sizing: border-box;
+
+}
+h1{
+  text-align: center;
+  font-size: 2em;
+}
+#popUpLogInDiv{
+  display: inline-block;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  margin-left:60%;
+}
+#createAccountButtonDiv{
+  display: inline-block;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+}
+#popUpLogInDiv{
+  display: inline-block;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+}
+#createAccountDiv{
+  width: 30%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
+  position: absolute;
+  left: 35%;
+  top: 125px;
+  display: none;
+  z-index: 100;
+  background-color: royalblue;
+}
+.xMark{
+  float: right;
+}
+#logInDiv{
+  width: 30%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
+  position: absolute;
+  left: 35%;
+  top: 125px;
+  display: none;
+  z-index: 100;
+  background-color: royalblue;
+  }

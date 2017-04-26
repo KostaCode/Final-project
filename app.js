@@ -4,11 +4,23 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+// set db and monk
+var mongodb = require('mongodb');
+var monk = require('monk');
+var db = monk('localhost:27017/test');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+
+var logIn = require('./routes/logIn');
+var createAccount = require('./routes/createAccount');
 
 var app = express();
+
+// adds db in req
+app.use(function(req, resp, next){
+   req.db = db;
+   next();
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,8 +34,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/users', users);
+
+app.use('/index', index);
+app.use('/login', logIn);
+app.use('/createAccount', createAccount);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

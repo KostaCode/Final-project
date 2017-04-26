@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="./javascripts/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div ng-app='indexApp'>
+            <div ng-controller='indexController'>
+                <!--create Acc pop-up -->
+                <div id="createAccountDiv">
+                    <img src="./images/xMark.png" class="xMark" width="30px" height="30px" />
+                    <h1>Create Account</h1>
+                    <!--username-->
+                    <div class="label-inputDiv">
+                        <label for="createAccountNameInput">Usermane:</label>
+                        <input type="text" id="createAccountNameInput"></input>
+                    </div>
+                    <!--password-->
+                    <div class="label-inputDiv">
+                        <label for="sreatePasswordInput">Password:</label>
+                        <input type="password" id="sreatePasswordInput"></input>
+                    </div>
+                    <!--repeat password-->
+                    <div class="label">
+                        <label for="createRepeatPasswordInput">Repeat password:</label>
+                        <input type="password" id="createRepeatPasswordInput"></input>
+                    </div>
+                    <button id="submit">Submit</button>
+                </div>
+                <!--login pop-up -->
+                <div id="logInDiv">
+                    <img src="./images/xMark.png" class="xMark" width="30px" height="30px" />
+                    <h1>Log In</h1>
+                    <div class="label-inputDiv">
+                        <label for="accountNameInput">Usermane:</label>
+                        <input type="text" id="accountNameInput"></input>
+                    </div>
+                    <div class="label-inputDiv">
+                        <label for="passwordInput">Password:</label>
+                        <input type="text" id="passwordInput"></input>
+                    </div>
+                    <button id="logInButton">Log in to the game</button>
+                </div>
+                <!--create HTML elements and render angular templates-->
+                <!--main HTML-->
+                <h1>Ract</h1>
+                <div id="popUpLogInDiv">
+                    <button id='popUpLogIn'>Log in</button>
+                </div>
+                <div id="createAccountButtonDiv">
+                    <button id='createAccountButton'>Create account</button>
+                </div>
+                <!--<div ng-repeat="y in x">-->
+                <!--<h2>{{x[0].user}}</h2>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <script src='/javascripts/index.js'></script>
+        <script src="/javascripts/jqueryFunctions.js"></script>
+    </div>
+</body>
+
+</html>
