@@ -49,16 +49,43 @@
                         <label for="passwordInput">Password:</label>
                         <input type="text" id="passwordInput"></input>
                     </div>
-                    <button id="logInButton">Log in to the game</button>
+                    <button id="logInButton">Log in </button>
                 </div>
                 <!--create HTML elements and render angular templates-->
                 <!--main HTML-->
                 <h1>Ract</h1>
                 <div id="popUpLogInDiv">
-                    <button id='popUpLogIn'>Log in</button>
+                    <button id='popUpLogInButton'>Log in</button>
                 </div>
                 <div id="createAccountButtonDiv">
                     <button id='createAccountButton'>Create account</button>
+                </div>
+                <!--choose a rase-->
+                <div id="raceDiv">
+                    <h1>Choose a race</h1>
+                    <article class="receArticles">
+                        <img src="http://i.imgur.com/R04G6.jpg" alt="terranLogo" width="100px" height="100px" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis alias distinctio dolore esse
+                            odit asperiores expedita culpa aliquid nisi. Dicta voluptates aliquam error nulla at vitae architecto
+                            quasi quos saepe.</p>
+                    </article>
+                    <article class="receArticles">
+                        <img src="https://static.blippar.com/media/public/2016/08/05/int.jpg" alt="terranLogo" width="100px" height="100px" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, accusantium. A ab maiores excepturi
+                            similique, ipsa perspiciatis, nihil error delectus labore aut magnam eligendi officia illum repudiandae
+                            pariatur commodi vero!</p>
+                    </article>
+                    <article class="receArticles">
+                        <img src="http://i.imgur.com/R04G6.jpg" alt="terranLogo" width="100px" height="100px" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim, repellat aliquid eligendi, dolore
+                            voluptate assumenda porro blanditiis doloribus, officia nobis hic ratione suscipit? Modi aspernatur
+                            sapiente nisi adipisci reiciendis!</p>
+                    </article>
+                    <div id="raceChoosing">
+                        <input type="radio" name="race" value="Terran">Terran</input>
+                        <input type="radio" name="race" value="A.I.">A.I.</input>
+                        <input type="radio" name="race" value="Plagre">Plagre</input>
+                    </div>
                 </div>
                 <!--<div ng-repeat="y in x">-->
                 <!--<h2>{{x[0].user}}</h2>-->
@@ -67,6 +94,7 @@
         </div>
         <script src='/javascripts/index.js'></script>
         <script src="/javascripts/jqueryFunctions.js"></script>
+        <script src="/javascripts/jqueryView.js"></script>
     </div>
 </body>
 

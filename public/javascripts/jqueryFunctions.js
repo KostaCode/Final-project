@@ -4,10 +4,10 @@ $("#createAccountButton").click(function () {
     $("#createAccountDiv").css("display", "initial");
     $("body").attr("id", "greyBody");
     $(this).css("visibility", "hidden");
-    $("#popUpLogIn").css("visibility", "hidden");
+    $("#popUpLogInButton").css("visibility", "hidden");
 });
 // logIn button
-$("#popUpLogIn").click(function () {
+$("#popUpLogInButton").click(function () {
     $("#logInDiv").css("display", "initial");
     $("body").attr("id", "greyBody");
     $(this).css("visibility", "hidden");
@@ -17,6 +17,12 @@ $("#popUpLogIn").click(function () {
 $(".xMark").click(function () {
     $(this).parent().css("display", "none");
     $("#createAccountButton").css("visibility", "initial");
-    $("#popUpLogIn").css("visibility", "initial");
+    $("#popUpLogInButton").css("visibility", "initial");
     $("#greyBody").removeAttr("id");
 });
+// $("#greyBody").click(function(){
+//     $("#createAccountDiv").css("display", "none");
+//     $("#logInDiv").css("display", "none");
+//     $("#greyBody").removeAttr("id");
+// });
+
