@@ -7,17 +7,26 @@ app.controller('indexController', function ($scope, $http) {
         console.log($scope.x);
     });
 });
-app.config(function($routeProvider){
+// structures config and controllers
+app.config(function ($routeProvider) {
     $routeProvider
-    .when("/structures",{
-        templateUrl:"../html/structures.htm",
-        controller: "structuresController"
-    });
+        .when("/structures", {
+            templateUrl: "../html/structures.htm",
+            controller: "structuresController"
+        })
+        .when("/army", {
+            templateUrl: "../html/army.htm",
+            controller: "armyController"
+        })
 });
-app.controller("structuresController", function($scope){
+app.controller("structuresController", function ($scope) {
     // mine && mine.level will be resived from the db
-    $scope.mine={};
+    $scope.mine = {};
     $scope.mine.level = "1";
 });
-
-
+// army controllers
+app.controller("armyController", function ($scope) {
+    // mine && mine.level will be resived from the db
+    $scope.mine = {};
+    $scope.mine.level = "1";
+});
