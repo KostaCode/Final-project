@@ -102,3 +102,494 @@ div#menuDiv > ul > a{
     text-decoration: none;
     cursor: url('/images/cursor.png'),auto;
 }
+#buildings{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    width: 800px;
+    height: auto;
+    border: 1px silver solid;
+    box-sizing: border-box;
+}
+/*buildings css*/
+/*mine*/
+#mine{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#mine > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#mine > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: rgb(30, 219, 15);
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    font-size: 1.5em;
+}
+h2{
+    text-align: center;
+    color: rgb(30, 219, 15);
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+}
+.floatElem{
+    float: left;
+}
+#upgradeMineButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeMineButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeMineButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*rafinery*/
+#rafinery{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#rafinery > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#rafinery > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeRafineryButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeRafineryButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeRafineryButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*farm*/
+#farm{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#farm > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#farm > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeFarmButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeFarmButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeFarmButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*LQ*/
+#livingQuarters{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#livingQuarters > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#livingQuarters > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeLivingQuartersButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeLivingQuartersButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeLivingQuartersButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*storage*/
+#storage{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#storage > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#storage > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeStorageButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeStorageButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeStorageButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*barracks*/
+#barracks{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#barracks > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#barracks > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeBarracksButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeBarracksButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeBarracksButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*range*/
+#range{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#range > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#range > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeRangeButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeRangeButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeRangeButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*machinery*/
+#machinery{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#machinery > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#machinery > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeMachineryButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeMachineryButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeMachineryButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*research lab*/
+#researchLab{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#researchLab > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#researchLab > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeResearchLabButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeResearchLabButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeResearchLabButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*advanced researht centre*/
+#advancedResearchCenter{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#advancedResearchCenter > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#advancedResearchCenter > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeAdvancedResearchCenterButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeAdvancedResearchCenterButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeAdvancedResearchCenterButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+/*bace reinforcement*/
+#baseReinforcement{
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    box-sizing: border-box;
+}
+#baseReinforcement > .floatElem > img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#baseReinforcement > div.floatElem > p{
+    display: inline-block;
+    width: 630px;
+    height: auto;
+    background-color: black;
+    color: wheat;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#upgradeBaseReinforcementButton{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    border: none;
+    cursor: url('/images/cursor.png'),auto;
+    border-radius: 20px;
+    background-color: rgb(173, 0, 0);
+    font-size: 1.3em;
+}
+#upgradeBaseReinforcementButton:hover{
+    box-shadow: 0px 0px 2px 2px grey;
+}
+#upgradeBaseReinforcementButtonDiv{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}

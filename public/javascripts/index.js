@@ -15,6 +15,8 @@ app.config(function($routeProvider){
     });
 });
 app.controller("structuresController", function($scope){
+    // mine && mine.level will be resived from the db
+    $scope.mine={};
     $scope.mine.level = "1";
 });
 

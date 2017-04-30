@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ract</title>
-    <link rel="stylesheet" href="/stylesheets/reset.css" />
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="/stylesheets/game.css">
+    <link rel="stylesheet" href="./stylesheets/reset.css" />
+    <link rel='stylesheet' href='./stylesheets/style.css' />
+    <link rel="stylesheet" href="./stylesheets/game.css">
     <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
     <script type="text/javascript" src="./javascripts/jquery.min.js"></script>
@@ -129,8 +129,7 @@
                     <!--</div>-->
                 </div>
             </div>
-            <script src='/javascripts/index.js'></script>
-            <script src="/javascripts/jqueryFunctions.js"></script>
+
         </div>
     </div>
     <div id="gameDiv">
@@ -146,33 +145,45 @@
             </div>
             <div id="secondLine">
                 <div class="resorses">
-                <p>Metal : 500 </p>
+                    <p>Metal : 500 </p>
                 </div>
                 <div class="resorses">
-                <p>Fuel : 500 </p>
+                    <p>Fuel : 500 </p>
                 </div>
                 <div class="resorses">
-                <p>Food : 500 </p>
+                    <p>Food : 500 </p>
                 </div>
                 <div class="resorses">
-                <p>Crystals : 0 </p>
+                    <p>Crystals : 0 </p>
                 </div>
                 <div class="resorses">
-                <p>Population : 100 </p>
+                    <p>Population : 100 </p>
                 </div>
             </div>
             <div id="menuDiv">
                 <ul>
-                    <a href="#structures"><li>Structures</li><a>
-                    <a href="#army"><li>Army</li></a>
-                    <a href="#map"><li>Map</li></a>
-                    <a href="#training"><li>Training</li></a>
-                    <a href="#reserch"><li>Research</li></a>
+                    <a href="#structures">
+                        <li>Structures</li>
+                        <a>
+                            <a href="#army">
+                                <li>Army</li>
+                            </a>
+                            <a href="#map">
+                                <li>Map</li>
+                            </a>
+                            <a href="#training">
+                                <li>Training</li>
+                            </a>
+                            <a href="#reserch">
+                                <li>Research</li>
+                            </a>
                 </ul>
             </div>
         </nav>
-        <div></div>
+        <div id="angularDiv" ng-view ></div>
     </div>
+    <script src='/javascripts/index.js'></script>
+    <script src="/javascripts/jqueryFunctions.js"></script>
 </body>
 
 </html>
