@@ -10,6 +10,7 @@ var monk = require('monk');
 var db = monk('localhost:27017/test');
 
 var index = require('./routes/index');
+var game = require("./routes/game")
 
 var logIn = require('./routes/logIn');
 var createAccount = require('./routes/createAccount');
@@ -34,10 +35,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-app.use('/index', index);
+app.use('/', index);
 app.use('/login', logIn);
 app.use('/createAccount', createAccount);
+app.use("/game", game);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

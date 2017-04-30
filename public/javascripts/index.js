@@ -1,4 +1,4 @@
-var app = angular.module('indexApp', []);
+var app = angular.module('indexApp', ['ngRoute']);
 app.controller('indexController', function ($scope, $http) {
     /*name of the varable that we get from db*/
     $http.get('index').then(function (response) {
@@ -7,4 +7,15 @@ app.controller('indexController', function ($scope, $http) {
         console.log($scope.x);
     });
 });
+app.config(function($routeProvider){
+    $routeProvider
+    .when("/structures",{
+        templateUrl:"../html/structures.htm",
+        controller: "structuresController"
+    });
+});
+app.controller("structuresController", function($scope){
+    $scope.mine.level = "1";
+});
+
 
