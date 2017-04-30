@@ -18,6 +18,41 @@ app.config(function ($routeProvider) {
             templateUrl: "../html/army.htm",
             controller: "armyController"
         })
+        .when("/training", {
+            templateUrl: "../html/training.htm",
+            controller: "trainingController"
+        })
+        .when("/research",{
+            templateUrl: "../html/research.htm",
+            controller: "researchController"
+        })
+        .when("/training/meleTraining",{
+            templateUrl: "../html/training.htm",
+            // templateUrl:"../html/meleTraining.htm",
+            controller: "trainingController"
+        })
+        .when("/training/rangeTraining",{
+            templateUrl: "../html/training.htm",
+            // templateUrl:"../html/meleTraining.htm",
+            controller: "trainingController"
+        })
+        .when("/training/machineTraining",{
+            templateUrl: "../html/training.htm",
+            // templateUrl:"../html/meleTraining.htm",
+            controller: "trainingController"
+        })
+        .when("/research/meleResearch",{
+            templateUrl: "../html/research.htm",
+            controller: "researchController"
+        })
+        .when("/research/rangeResearch",{
+            templateUrl: "../html/research.htm",
+            controller: "researchController"
+        })
+        .when("/research/machineResearch",{
+            templateUrl: "../html/research.htm",
+            controller: "researchController"
+        })
 });
 app.controller("structuresController", function ($scope) {
     // mine && mine.level will be resived from the db
@@ -26,7 +61,15 @@ app.controller("structuresController", function ($scope) {
 });
 // army controllers
 app.controller("armyController", function ($scope) {
-    // mine && mine.level will be resived from the db
+    $scope.mine = {};
+    $scope.mine.level = "1";
+});
+// training controller
+app.controller("trainingController", function ($scope) {
+    $scope.mine = {};
+    $scope.mine.level = "1";
+});
+app.controller("researchController", function($scope){
     $scope.mine = {};
     $scope.mine.level = "1";
 });

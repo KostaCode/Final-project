@@ -27,7 +27,7 @@ div#profileDiv > img{
 div#profileDiv > p{
     padding: 5px;
     font-size: 1.3em;
-    color: wheat;
+    color: darkseagreen;
     text-align: center;
 }
 #firstLine{
@@ -73,7 +73,7 @@ div#firstLine > p{
 }
 #secondLine > .resorses > p:hover{
     background-color: rgb(3, 11, 165);
-    box-shadow: 1px 1px 3px 3px red;
+    box-shadow: 0.5px 0.5px 2px 2px red;
 }
 div#menuDiv{
     margin-top: 20px;
