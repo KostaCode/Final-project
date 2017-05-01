@@ -5,6 +5,15 @@ app.controller('indexController', function ($scope, $http) {
         /*name of the varable that will be made in the scope e.x.*/
         $scope.x = response.data;
         console.log($scope.x);
+        $scope.upgradeMeleHealth = function () {
+            var data = "melee_health";
+            $http.post('http//localhost:3000', data).then(
+                function (response) {
+
+                }, function (response) {
+
+                });
+        };
     });
 });
 // structures config and controllers
@@ -18,35 +27,35 @@ app.config(function ($routeProvider) {
             templateUrl: "../html/army.htm",
             controller: "armyController"
         })
-        .when("/research",{
+        .when("/research", {
             templateUrl: "../html/research.htm",
             controller: "researchController"
         })
-        .when("/training/meleTraining",{
+        .when("/training/meleTraining", {
             templateUrl: "../html/trainingMele.htm",
             // templateUrl:"../html/meleTraining.htm",
             controller: "trainingController"
         })
-        .when("/training/rangeTraining",{
+        .when("/training/rangeTraining", {
             templateUrl: "../html/trainingRange.htm",
             // templateUrl:"../html/meleTraining.htm",
             controller: "trainingController"
         })
-        .when("/training/machineTraining",{
+        .when("/training/machineTraining", {
             templateUrl: "../html/trainingMachines.htm",
             // templateUrl:"../html/meleTraining.htm",
             controller: "trainingController"
         })
-        .when("/research/meleResearch",{
-            templateUrl: "../html/research.htm",
+        .when("/research/meleResearch", {
+            templateUrl: "../html/meleResearch.htm",
             controller: "researchController"
         })
-        .when("/research/rangeResearch",{
-            templateUrl: "../html/research.htm",
+        .when("/research/rangeResearch", {
+            templateUrl: "../html/rangeResearch.htm",
             controller: "researchController"
         })
-        .when("/research/machineResearch",{
-            templateUrl: "../html/research.htm",
+        .when("/research/machineResearch", {
+            templateUrl: "../html/machineResearch.htm",
             controller: "researchController"
         })
 });
@@ -65,7 +74,7 @@ app.controller("trainingController", function ($scope) {
     $scope.mine = {};
     $scope.mine.level = "1";
 });
-app.controller("researchController", function($scope){
+app.controller("researchController", function ($scope) {
     $scope.mine = {};
     $scope.mine.level = "1";
 });

@@ -111,6 +111,7 @@ div#menuDiv > ul > a{
     border: 1px silver solid;
     box-sizing: border-box;
 }
+
 /*buildings css*/
 /*mine*/
 #mine{
@@ -151,8 +152,30 @@ h2{
     height: auto;
     font-size: 1em;
 }
+#strusturesTitle{
+    color: darkseagreen;
+    padding: 5px;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
 .floatElem{
     float: left;
+}
+/*timer!!!*/
+.timer{
+    margin: auto;
+    width: 500px;
+    height: auto;
+    border: 3px red solid;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+}
+.timer > p{
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 5px;
+    color: darkseagreen;
 }
 #upgradeMineButton{
     text-align: center;
@@ -170,7 +193,7 @@ h2{
 }
 #upgradeMineButtonDiv{
     text-align: center;
-    margin: 10px auto;
+    margin: 5px auto;
     width: 100%;
 }
 /*rafinery*/
