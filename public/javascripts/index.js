@@ -18,26 +18,22 @@ app.config(function ($routeProvider) {
             templateUrl: "../html/army.htm",
             controller: "armyController"
         })
-        .when("/training", {
-            templateUrl: "../html/training.htm",
-            controller: "trainingController"
-        })
         .when("/research",{
             templateUrl: "../html/research.htm",
             controller: "researchController"
         })
         .when("/training/meleTraining",{
-            templateUrl: "../html/training.htm",
+            templateUrl: "../html/trainingMele.htm",
             // templateUrl:"../html/meleTraining.htm",
             controller: "trainingController"
         })
         .when("/training/rangeTraining",{
-            templateUrl: "../html/training.htm",
+            templateUrl: "../html/trainingRange.htm",
             // templateUrl:"../html/meleTraining.htm",
             controller: "trainingController"
         })
         .when("/training/machineTraining",{
-            templateUrl: "../html/training.htm",
+            templateUrl: "../html/trainingMachines.htm",
             // templateUrl:"../html/meleTraining.htm",
             controller: "trainingController"
         })
