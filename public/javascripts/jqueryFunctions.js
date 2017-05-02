@@ -52,3 +52,15 @@ $(function () {
       console.log($(this).parent().parent().attr("id"));
    });
 });
+$("#submitFormButton").click(function(){
+    $("#createAccountDiv").css("display","none");
+    $("#raceDiv").css("display","initial");
+});
+$("#logInButton").click(function(){
+    $("#logInDiv").css("display","none");
+    $("#raceDiv").css("display","initial");
+});
+$("#raceChosen").click(function(){
+    $("#logInOrCreateAcc").css("display","none");
+    $("#gameDiv").css("display","initial");
+});

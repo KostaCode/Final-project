@@ -10,7 +10,7 @@ body {
 
 }
 #logInOrCreateAcc{
-  display: none;
+  display: initial;
   width: 100%;
   height: 100%;
 }

@@ -2,7 +2,7 @@
     width: 1170px;
     height: auto;
     box-sizing: border-box;
-    display: initial;
+    display: none;
 }
 nav{
     /*border: 1px solid black;*/

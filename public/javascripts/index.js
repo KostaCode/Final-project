@@ -173,7 +173,8 @@ function User() {
             this.upgradeStructureProcess.time = structuresResNeeded[structurelvl][3];
             this.upgradeStructureProcess.type = structure;
             this.upgradeStructureProcess.process = function (){
-                window.setTimeout.call(this, User.upgradeStructure.bind(this,structure), structuresResNeeded[structurelvl][3] * 1000)};
+                // what is this anymore
+                window.setTimeout.call(this, this.upgradeStructure.bind(this,structure), structuresResNeeded[structurelvl][3] * 1000)};
             this.upgradeStructureProcess.process();
         }
     }
