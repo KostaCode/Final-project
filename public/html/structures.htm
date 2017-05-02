@@ -14,9 +14,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.mine}}</h2>
+        <h2>Level : {{user.structures.mine}}</h2>
         <div id="upgradeMineButtonDiv">
-            <button id="upgradeMineButton" ng-click="h('mine')">Upgrade</button>
+            <button id="upgradeMineButton" ng-click="user.startUpgradingStructure('mine')">Upgrade</button>
         </div>
     </div>
     <div id="rafinery">
@@ -28,9 +28,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.refinery}}</h2>
+        <h2>Level : {{user.structures.refinery}}</h2>
         <div id="upgradeRafineryButtonDiv">
-            <button id="upgradeRafineryButton">Upgrade</button>
+            <button id="upgradeRafineryButton" ng-click="user.startUpgradingStructure('refinery')">Upgrade</button>
         </div>
     </div>
     <div id="farm">
@@ -43,9 +43,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.farm}}</h2>
+        <h2>Level : {{user.structures.farm}}</h2>
         <div id="upgradeFarmButtonDiv">
-            <button id="upgradeFarmButton">Upgrade</button>
+            <button id="upgradeFarmButton" ng-click="user.startUpgradingStructure('farm')">Upgrade</button>
         </div>
     </div>
     <div id="livingQuarters">
@@ -58,9 +58,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.livingQ}}</h2>
+        <h2>Level : {{user.structures.livingQ}}</h2>
         <div id="upgradeLivingQuartersButtonDiv">
-            <button id="upgradeLivingQuartersButton">Upgrade</button>
+            <button id="upgradeLivingQuartersButton" ng-click="user.startUpgradingStructure('livingQ')">Upgrade</button>
         </div>
     </div>
     <div id="storage">
@@ -72,9 +72,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.storage}}</h2>
+        <h2>Level : {{user.structures.storage}}</h2>
         <div id="upgradeStorageButtonDiv">
-            <button id="upgradeStorageButton">Upgrade</button>
+            <button id="upgradeStorageButton" ng-click="user.startUpgradingStructure('storge')">Upgrade</button>
         </div>
     </div>
     <div id="barracks">
@@ -87,9 +87,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.barracks}}</h2>
+        <h2>Level : {{user.structures.barracks}}</h2>
         <div id="upgradeBarracksButtonDiv">
-            <button id="upgradeBarracksButton">Upgrade</button>
+            <button id="upgradeBarracksButton" ng-click="user.startUpgradingStructure('barracks')">Upgrade</button>
         </div>
     </div>
     <div id="range">
@@ -102,9 +102,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.range}}</h2>
+        <h2>Level : {{user.structures.range}}</h2>
         <div id="upgradeRangeButtonDiv">
-            <button id="upgradeRangeButton">Upgrade</button>
+            <button id="upgradeRangeButton" ng-click="user.startUpgradingStructure('range')">Upgrade</button>
         </div>
     </div>
     <div id="machinery">
@@ -116,9 +116,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.machinery}}</h2>
+        <h2>Level : {{user.structures.machinery}}</h2>
         <div id="upgradeMachineryButtonDiv">
-            <button id="upgradeMachineryButton">Upgrade</button>
+            <button id="upgradeMachineryButton" ng-click="user.startUpgradingStructure('machinery')">Upgrade</button>
         </div>
     </div>
     <div id="researchLab">
@@ -130,9 +130,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.research}}</h2>
+        <h2>Level : {{user.structures.research}}</h2>
         <div id="upgradeResearchLabButtonDiv">
-            <button id="upgradeResearchLabButton">Upgrade</button>
+            <button id="upgradeResearchLabButton" ng-click="user.startUpgradingStructure('research')">Upgrade</button>
         </div>
     </div>
     <div id="advancedResearchCenter">
@@ -145,9 +145,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.specResearch}}</h2>
+        <h2>Level : {{user.structures.specResearch}}</h2>
         <div id="upgradeAdvancedResearchCenterButtonDiv">
-            <button id="upgradeAdvancedResearchCenterButton">Upgrade</button>
+            <button id="upgradeAdvancedResearchCenterButton" ng-click="user.startUpgradingStructure('specResearch')">Upgrade</button>
         </div>
     </div>
     <div id="baseReinforcement">
@@ -160,9 +160,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{user[0].structures.wall}}</h2>
+        <h2>Level : {{user.structures.wall}}</h2>
         <div id="upgradeBaseReinforcementButtonDiv">
-            <button id="upgradeBaseReinforcementButton">Upgrade</button>
+            <button id="upgradeBaseReinforcementButton" ng-click="user.startUpgradingStructure('wall')">Upgrade</button>
         </div>
     </div>
 </div>

@@ -24,12 +24,13 @@
             </br>
             <p>Resources required:</p>
             </br>
-            <input placeholder="enter the amount units to train" type="number" min="1"></input>
+            <input placeholder="enter the amount units to train" type="number" min="1" id="machineryCount"></input>
             <div class="maxNumberOfUnitsToTrainDiv">
                 <button class="maxNumberOfUnitsToTrainButton">Max</button>
             </div>
+            <script>var count = $("machineryCount").val();</script>
             <div id="trainMachineUnit1ButtonDiv">
-                <button id="trainMachineUnit1Button">Train</button>
+                <button id="trainMachineUnit1Button"  ng-click="user.startTraining('machinery1', '1')">Train</button>
             </div>
         </div>
         <h2></h2>

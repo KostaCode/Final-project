@@ -252,3 +252,6 @@ div#createAccountDiv > form > h1 {
   height: 75px;
   border-radius: 50%;
 }*/
+.cursor{
+  cursor: url('/images/cursor.png'),auto;
+}
