@@ -17,16 +17,17 @@
     <link rel="stylesheet" href="./stylesheets/meleResearch.css"/>
     <link rel="stylesheet" href="./stylesheets/rangeResearch.css"/>
     <link rel="stylesheet" href="./stylesheets/machineResearch.css"/>
+    <script type="text/javascript" src="./javascripts/jquery.min.js"></script>
     <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-    <script type="text/javascript" src="./javascripts/jquery.min.js"></script>
+
 </head>
 
-<body ng-app='indexApp'>
-    <div id="logInOrCreateAcc">
+<body ng-app='indexApp' ng-controller='indexController'>
+    <div id="logInOrCreateAcc" >
         <div id="wrapper">
             <div>
-                <div ng-controller='indexController'>
+                <div>
                     <!--create Acc pop-up -->
                     <div id="createAccountDiv">
                         <form>
@@ -34,24 +35,24 @@
                             <h1>Create Account</h1>
                             <!--username-->
                             <div class="labels">
-                                <label for="createAccountNameInput">Username:</label>
+                                <label for="createAccountNameInput" class="inputCursorChange">Username:</label>
                             </div>
                             <div class="inputs">
-                                <input type="text" id="createAccountNameInput"></input>
+                                <input type="text" id="createAccountNameInput" class="inputCursorChange"></input>
                             </div>
                             <!--password-->
                             <div class="labels">
-                                <label for="createPasswordInput">Password:</label>
+                                <label for="createPasswordInput" class="inputCursorChange">Password:</label>
                             </div>
                             <div class="inputs">
-                                <input type="password" id="createPasswordInput"></input>
+                                <input type="password" id="createPasswordInput" class="inputCursorChange"></input>
                             </div>
                             <!--repeat password-->
                             <div class="labels">
-                                <label for="createRepeatPasswordInput">Repeat password:</label>
+                                <label for="createRepeatPasswordInput" class="inputCursorChange">Repeat password:</label>
                             </div>
                             <div class="inputs">
-                                <input type="password" id="createRepeatPasswordInput"></input>
+                                <input type="password" id="createRepeatPasswordInput" class="inputCursorChange"></input>
                             </div>
                             <div id="submitButtonDiv">
                                 <button id="submitFormButton">Submit</button>
@@ -64,16 +65,16 @@
                             <img src="./images/xMark.png" class="xMark" width="30px" height="30px" />
                             <h1>Log In</h1>
                             <div class="labels">
-                                <label for="accountNameInput">Usermane:</label>
+                                <label for="accountNameInput" class="inputCursorChange">Username:</label>
                             </div>
                             <div class="inputs">
-                                <input type="text" id="accountNameInput"></input>
+                                <input type="text" id="accountNameInput" class="inputCursorChange"></input>
                             </div>
                             <div class="labels">
-                                <label for="passwordInput">Password:</label>
+                                <label for="passwordInput" class="inputCursorChange">Password:</label>
                             </div>
                             <div class="inputs">
-                                <input type="password" id="passwordInput"></input>
+                                <input type="password" id="passwordInput" class="inputCursorChange"></input>
                             </div>
                             <div id="logInButtonDiv">
                                 <button id="logInButton">Log in </button>
@@ -144,7 +145,7 @@
         <nav>
             <div id="profileDiv">
                 <img src="http://freevector.co/wp-content/uploads/2010/04/42994-question-sign-on-person-head.png" alt="profile pic" />
-                <p>Profile name:Rikimaru</p>
+                <p>Profile name:{{user[0].username}}</p>
                 <p>Level:10</p>
             </div>
             <div id="firstLine">
@@ -153,19 +154,19 @@
             </div>
             <div id="secondLine">
                 <div class="resorses">
-                    <p>Metal : 500 </p>
+                    <p>Metal : {{user[0].resources.metal}} </p>
                 </div>
                 <div class="resorses">
-                    <p>Fuel : 500 </p>
+                    <p>Fuel : {{user[0].resources.fuel}} </p>
                 </div>
                 <div class="resorses">
-                    <p>Food : 500 </p>
+                    <p>Food : {{user[0].resources.food}} </p>
                 </div>
                 <div class="resorses">
-                    <p>Crystals : 0 </p>
+                    <p>Crystals : {{user[0].resources.crystal}} </p>
                 </div>
                 <div class="resorses">
-                    <p>Population : 100 </p>
+                    <p>Population : {{user[0].resources.population}} / {{user[0].storage.population}} </p>
                 </div>
             </div>
             <div id="menuDiv">
@@ -192,6 +193,7 @@
     </div>
     <script src='/javascripts/index.js'></script>
     <script src="/javascripts/jqueryFunctions.js"></script>
+    <script src="/javascripts/halp.js"></script>
 </body>
 
 </html>

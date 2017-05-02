@@ -1,19 +1,46 @@
+
 var app = angular.module('indexApp', ['ngRoute']);
+
+// factories.factory('object', function () {
+//     return {
+
+//     };
+// });
+
 app.controller('indexController', function ($scope, $http) {
+    // var req = {
+    //     method: 'POST',
+    //     url: 'http://localhost:3000/structures',
+    //     headers: {
+    //         'Content-Type': undefined
+    //     },
+    //     data: { structure: '$mine.attr("id")' }
+    // }
+    // $http(req).then(function(){}, function(){});
     /*name of the varable that we get from db*/
-    $http.get('index').then(function (response) {
+    $scope.upgStructure = function () {
+        var data = { mine: "mine" };
+        $http.post('http://localhost:3000/structures', data).then(function (response) {
+            console.log(response);
+            console.log(response.data.junktion);
+        });
+    }
+    $http.post('http://localhost:3000/index').then(function (response) {
         /*name of the varable that will be made in the scope e.x.*/
-        $scope.x = response.data;
-        console.log($scope.x);
-        $scope.upgradeMeleHealth = function () {
-            var data = "melee_health";
-            $http.post('http//localhost:3000', data).then(
-                function (response) {
+        $scope.user = null;
+        $scope.user = response.data;
+        console.log($scope.user);
+        console.log($scope.user[0]);
+        console.log($scope.user[0].username);
+        // $scope.upgradeMeleHealth = function () {
+        //     var data = "melee_health";
+        //     $http.post('http//localhost:3000', data).then(
+        //         function (response) {
 
-                }, function (response) {
+        //         }, function (response) {
 
-                });
-        };
+        //         });
+        // };
     });
 });
 // structures config and controllers

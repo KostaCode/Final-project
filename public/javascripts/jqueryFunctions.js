@@ -47,5 +47,8 @@ $(function () {
 // $("#maxNumberOfUnitsToSend").click(function(){
 //    $(this).css("background-color", "red");
 // });
-
+   $("#upgradeMineButton").click(function(){
+      user[0].startUpgradingStructure($(this).parent().parent().attr("id"));
+      console.log($(this).parent().parent().attr("id"));
+   });
 });

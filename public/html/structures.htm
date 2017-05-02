@@ -1,9 +1,9 @@
 <div id="buildings">
     <h1 id="strusturesTitle">Structures</h1>
     <div class="timer">
-        <p>Upgrading:</p>
-        <p>Level:</p>
-        <p>Time left:</p>
+        <p>Upgrading: {{user[0].upgradeStructureProcess.type}}</p>
+        <p>Level: {{user[0].upgradeStructureProcess.level}}</p>
+        <p>Time left: {{user[0].upgradeStructureProcess.time}}</p>
     </div>
     <div id="mine">
         <h1>Mine</h1>
@@ -14,13 +14,13 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{mine.level}}</h2>
+        <h2>Level : {{user[0].structures.mine}}</h2>
         <div id="upgradeMineButtonDiv">
-            <button id="upgradeMineButton">Upgrade</button>
+            <button id="upgradeMineButton" ng-click="upgStructure()">Upgrade</button>
         </div>
     </div>
     <div id="rafinery">
-        <h1>Rafinery</h1>
+        <h1>Refinery</h1>
         <div class="floatElem">
             <img src="http://media.indiedb.com/images/games/1/19/18113/refinery_concept.jpg" alt="rafinery" />
         </div>
@@ -28,7 +28,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{rafinery.level}}</h2>
+        <h2>Level : {{user[0].structures.refinery}}</h2>
         <div id="upgradeRafineryButtonDiv">
             <button id="upgradeRafineryButton">Upgrade</button>
         </div>
@@ -43,7 +43,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{farm.level}}</h2>
+        <h2>Level : {{user[0].structures.farm}}</h2>
         <div id="upgradeFarmButtonDiv">
             <button id="upgradeFarmButton">Upgrade</button>
         </div>
@@ -58,7 +58,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{livingQuarters.level}}</h2>
+        <h2>Level : {{user[0].structures.livingQ}}</h2>
         <div id="upgradeLivingQuartersButtonDiv">
             <button id="upgradeLivingQuartersButton">Upgrade</button>
         </div>
@@ -72,7 +72,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{storage.level}}</h2>
+        <h2>Level : {{user[0].structures.storage}}</h2>
         <div id="upgradeStorageButtonDiv">
             <button id="upgradeStorageButton">Upgrade</button>
         </div>
@@ -87,7 +87,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{barraks.level}}</h2>
+        <h2>Level : {{user[0].structures.barracks}}</h2>
         <div id="upgradeBarracksButtonDiv">
             <button id="upgradeBarracksButton">Upgrade</button>
         </div>
@@ -102,7 +102,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{range.level}}</h2>
+        <h2>Level : {{user[0].structures.range}}</h2>
         <div id="upgradeRangeButtonDiv">
             <button id="upgradeRangeButton">Upgrade</button>
         </div>
@@ -116,7 +116,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{machinery.level}}</h2>
+        <h2>Level : {{user[0].structures.machinery}}</h2>
         <div id="upgradeMachineryButtonDiv">
             <button id="upgradeMachineryButton">Upgrade</button>
         </div>
@@ -130,7 +130,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{researchLab.level}}</h2>
+        <h2>Level : {{user[0].structures.research}}</h2>
         <div id="upgradeResearchLabButtonDiv">
             <button id="upgradeResearchLabButton">Upgrade</button>
         </div>
@@ -145,7 +145,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{advancedResearchCenter.level}}</h2>
+        <h2>Level : {{user[0].structures.specResearch}}</h2>
         <div id="upgradeAdvancedResearchCenterButtonDiv">
             <button id="upgradeAdvancedResearchCenterButton">Upgrade</button>
         </div>
@@ -160,7 +160,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint veritatis vel totam qui illum. Iusto molestias
                 dolorum odio repellendus incidunt labore, a error harum dolore, molestiae, repellat rem explicabo!</p>
         </div>
-        <h2>Level : {{baseReinforsement.level}}</h2>
+        <h2>Level : {{user[0].structures.wall}}</h2>
         <div id="upgradeBaseReinforcementButtonDiv">
             <button id="upgradeBaseReinforcementButton">Upgrade</button>
         </div>

@@ -1,15 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var halp = require("../halp.js");
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-  var loginTestCollection = req.db.get('loginTest');
-  loginTestCollection.find({},{})
-    .then(function (data) {
-      res.json(data);
-    }).catch(function (err) {
-      res.json(500, err);
-    });
+router.post('/', function (req, res, next) {
+console.log(halp);
+      res.json(halp.users);
+
 });
 
 module.exports = router;

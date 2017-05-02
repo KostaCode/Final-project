@@ -74,7 +74,7 @@ a {
   background: none;
   border: 0;
   color: honeydew;
-  
+  cursor: url('/images/cursor.png'),auto;
 }
 .buttonsDiv + h2{
   display: inline-block;
@@ -91,6 +91,7 @@ a {
   background: none;
   border: 0;
   color: honeydew;
+  cursor: url('/images/cursor.png'),auto;
 }
 #createAccountDiv{
   width: 40%;
@@ -116,13 +117,15 @@ div#createAccountDiv > form > h1 {
   margin: 5px;
   padding: 2px;
   font-size: 2em;
-   color: wheat;
+  color: wheat;
 }
 .inputs{
   text-align: center;
   margin: 5px;
   padding: 2px;
-  
+}
+.inputCursorChange{
+  cursor: url('/images/cursor.png'),auto;
 }
 #submitButtonDiv{
   text-align: center;
@@ -137,6 +140,7 @@ div#createAccountDiv > form > h1 {
   background-color: rgb(183, 9, 9);
   font-size: 3em;
   color:khaki;
+  cursor: url('/images/cursor.png'),auto;
 }
 .xMark{
   float: right;
@@ -173,6 +177,7 @@ div#createAccountDiv > form > h1 {
   background-color: rgb(183, 9, 9);
   font-size: 3em;
   color:khaki;
+  cursor: url('/images/cursor.png'),auto;
 }
 #raceDiv{
   width: 100%;
